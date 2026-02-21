@@ -75,18 +75,31 @@
 ### 4.1 ADB 安装方式（推荐）
 ![使用建议图](./使用建议图:%20可视化安装说明.jpg)
 
-#### 4.1.1 安卓手机ADB安装步骤
+#### 4.1.1 安卓手机安装步骤
 1. **准备工作**
-   - 下载需要安装的第三方软件APK文件，已放在 tools 文件夹内
-   - 手机上安装 EDGE 浏览器（如果未安装）：[下载链接](https://www.microsoft.com/en-us/microsoftedge/download/microsoft-edge/windows64/m.edge/edge.exe)或者 Chrome 浏览器（如果未安装）：[下载链接](https://www.google.com/chrome/download/114/chrome_installer.exe)
-   - 浏览器中打开 [WebADB](https://app.webadb.com/install) 网站或 https://gjx.cccyn.cc 网站
-   - 点击「安装清风车机助手」按钮
-2. **连接车机**
-   - 使用OTG转接及公对公数据线连接手机和车机
+   - 打开 [WebADB](https://app.webadb.com/install) 网站
+   - 使用OTG数据线连接手机和车机
+   ![android1](img/android1.png)
 
-3. **执行安装命令**
-   - 等待发现 SA8155 V2 车机 ， 点击「连接」按钮，自动安装清风车机助手
-   - 安装完成后，车机会自动启动清风车机助手
+2. **在线连接**
+   - 在网站点击「开始使用」按钮
+   - 按照网站提示完成连接
+   ![android2](img/android2.png)
+   ![android3](img/android3.png)
+   ![android4](img/android4.png)
+   ![android5](img/android5.png)
+   ![android6](img/android6.png)
+
+3. **上传安装包**
+   - 在网站界面上传APK文件到车机 `/storage/emulated/0/temp/` 目录
+   ![android7](img/android7.png)
+   ![android8](img/android8.png)
+
+4. **执行安装命令**
+   - 在网站终端执行以下命令安装软件：
+   ```
+   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
+   ```
 
 #### 4.1.2 Windows电脑ADB安装步骤
 1. **准备工作**
