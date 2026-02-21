@@ -119,7 +119,7 @@
 4. **执行安装命令**
    - 在网站终端执行以下命令安装软件：
    ```
-   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk
+   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.yunpan.appmanage/.ui.ActivityHome
    ```
 
 ### 4.2 其他安装方式
