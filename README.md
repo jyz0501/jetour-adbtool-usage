@@ -108,13 +108,24 @@
 1. **准备工作**
    - 打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
    - 使用USB-A双公头数据线连接Mac和车机
+   ![tango1](img/tango1.png)
 
 2. **在线连接**
    - 在网站点击「开始使用」按钮
    - 按照网站提示完成连接
+   ![tango2](img/tango2.png)
+   ![tango3](img/tango3.png)
+   ![tango4](img/tango4.png)
+   ![tango5](img/tango5.png)
+   ![tango6](img/tango6.png)
+   ![tango7](img/tango7.png)
 
 3. **上传安装包**
    - 在网站界面上传APK文件到车机 `/storage/emulated/0/temp/` 目录
+   ![tango8](img/tango8.png)
+   ![tango9](img/tango9.png)
+   ![tango9-1](img/tango9-1.png)
+   ![tang9-2](img/tang9-2.png)
 
 4. **执行安装命令**
    - 在网站终端执行以下命令安装软件：
