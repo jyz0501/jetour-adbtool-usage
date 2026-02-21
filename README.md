@@ -77,7 +77,8 @@
 
 #### 4.1.1 安卓手机安装步骤
 1. **准备工作**
-   - 打开 [WebADB](https://app.webadb.com/install) 网站
+   - 手机下载需要安装的第三方软件APK文件
+   - 手机打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
    - 使用OTG数据线连接手机和车机
    ![android1](img/android1.png)
 
@@ -118,8 +119,9 @@
 
 #### 4.1.3 苹果电脑安装步骤
 1. **准备工作**
-   - 打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
-   - 使用OTG线 连接Mac和车机
+   - Mac下载需要安装的第三方软件APK文件
+   - Mac打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
+   - 使用USB-A双公头数据线连接Mac和车机
    ![tango1](img/tango1.png)
 
 2. **在线连接**
