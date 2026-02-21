@@ -48,7 +48,7 @@
 | OTG数据线 | 手机连接车机 | [京东链接1](https://item.jd.com/100095234799.html) / [京东链接2](https://item.jd.com/100022896053.html) |
 | 套装(USB-A+OTG) | 电脑/手机连接车机 | [抖音商城](https://v.douyin.com/IsmYFCGid8g/) |
 | 应用管家 | 底层管理工具 | [下载链接](https://file.vju.cc/%E5%BA%94%E7%94%A8%E7%AE%A1%E5%AE%B6/%E5%BA%94%E7%94%A8%E7%AE%A1%E5%AE%B61.8.0%E5%85%AC%E7%AD%BE%E7%89%88.apk) |
-| WebADB | 浏览器安装工具 | [安装工具](https://app.webadb.com/install) |
+| WebADB | 安装工具 | [安装工具](https://app.webadb.com/install) |
 
 ## 4. 安装步骤
 
@@ -130,7 +130,7 @@
 4. **执行安装命令**
    - 在网站终端执行以下命令安装软件：
    ```
-   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.yunpan.appmanage/.ui.ActivityHome
+   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
    ```
 
 ### 4.2 其他安装方式
