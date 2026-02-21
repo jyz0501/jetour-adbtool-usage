@@ -48,7 +48,6 @@
 | OTG数据线 | 手机连接车机 | [京东链接1](https://item.jd.com/100095234799.html) / [京东链接2](https://item.jd.com/100022896053.html) |
 | 套装(USB-A+OTG) | 电脑/手机连接车机 | [抖音商城](https://v.douyin.com/IsmYFCGid8g/) |
 | 应用管家 | 底层管理工具 | [下载链接](https://file.vju.cc/%E5%BA%94%E7%94%A8%E7%AE%A1%E5%AE%B6/%E5%BA%94%E7%94%A8%E7%AE%A1%E5%AE%B61.8.0%E5%85%AC%E7%AD%BE%E7%89%88.apk) |
-| WebADB | 安装工具 | [安装工具](https://app.webadb.com/install) |
 
 ## 4. 安装步骤
 
@@ -107,31 +106,37 @@
 #### 4.1.3 苹果电脑安装步骤
 1. **准备工作**
    - 打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
-   - 使用USB-A双公头数据线连接Mac和车机
+   - 使用OTG线 连接Mac和车机
    ![tango1](img/tango1.png)
 
 2. **在线连接**
    - 在网站点击「开始使用」按钮
    - 按照网站提示完成连接
+   - 下滑点击「我已开启USB调试模式」
    ![tango2](img/tango2.png)
+   - 「选择USB方式连接」按钮
    ![tango3](img/tango3.png)
+   - 点击「连接」按钮，等待车机连接
    ![tango4](img/tango4.png)
+   - 允许 USB 调试 选允许
    ![tango5](img/tango5.png)
+   - 按照图片提示进行
    ![tango6](img/tango6.png)
    ![tango7](img/tango7.png)
 
 3. **上传安装包**
    - 在网站界面上传APK文件到车机 `/storage/emulated/0/temp/` 目录
    ![tango8](img/tango8.png)
+   - 点击「上传」按钮，等待上传完成，上传完成后，点击+号图标，打开终端
    ![tango9](img/tango9.png)
-   ![tango9-1](img/tango9-1.png)
-   ![tang9-2](img/tang9-2.png)
 
 4. **执行安装命令**
-   - 在网站终端执行以下命令安装软件：
+   - 在复制粘贴以下命令回车执行：
    ```
    pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
    ```
+   ![tango9-1](img/tango9-1.png)
+   ![tang9-2](img/tang9-2.png)
 
 ### 4.2 其他安装方式
 
