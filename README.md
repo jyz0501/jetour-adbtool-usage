@@ -78,17 +78,16 @@
 
 #### 4.1.1 安卓手机ADB安装步骤
 1. **准备工作**
-   - 手机开启USB调试模式
-   - 下载需要安装的第三方软件APK文件
-
+   - 下载需要安装的第三方软件APK文件，已放在 tools 文件夹内
+   - 手机上安装 EDGE 浏览器（如果未安装）：[下载链接](https://www.microsoft.com/en-us/microsoftedge/download/microsoft-edge/windows64/m.edge/edge.exe)或者 Chrome 浏览器（如果未安装）：[下载链接](https://www.google.com/chrome/download/114/chrome_installer.exe)
+   - 浏览器中打开 [WebADB](https://app.webadb.com/install) 网站或 https://gjx.cccyn.cc 网站
+   - 点击「安装清风车机助手」按钮
 2. **连接车机**
-   - 使用OTG数据线连接手机和车机
-   - 车机端选择「文件传输」模式
+   - 使用OTG转接及公对公数据线连接手机和车机
 
 3. **执行安装命令**
-   - 打开手机终端模拟器
-   - 输入命令：`adb devices` 确认设备连接
-   - 输入命令：`adb install 软件路径.apk` 进行安装
+   - 等待发现 SA8155 V2 车机 ， 点击「连接」按钮，自动安装清风车机助手
+   - 安装完成后，车机会自动启动清风车机助手
 
 #### 4.1.2 Windows电脑ADB安装步骤
 1. **准备工作**
@@ -106,20 +105,18 @@
    - 输入命令：`adb devices` 确认设备连接
    - 输入命令：`adb install 软件路径.apk` 进行安装
 
-#### 4.1.3 苹果电脑ADB安装步骤
+#### 4.1.3 苹果电脑安装步骤
 1. **准备工作**
-   - 安装Homebrew（如果未安装）：`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-   - 安装ADB工具：`brew install android-platform-tools`
-   - 下载需要安装的第三方软件APK文件
-
-2. **连接车机**
+   - 打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
    - 使用USB-A双公头数据线连接Mac和车机
    - 车机端选择「文件传输」模式
 
-3. **执行安装命令**
-   - 打开终端
-   - 输入命令：`adb devices` 确认设备连接
-   - 输入命令：`adb install 软件路径.apk` 进行安装
+2. **在线连接**
+   - 在网站点击「Connect」按钮
+   - 按照网站提示完成连接
+
+3. **安装软件**
+   - 在网站界面直接上传APK文件即可完成安装
 
 ### 4.2 其他安装方式
 
