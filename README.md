@@ -46,7 +46,7 @@
 |---------|------|----------|
 | USB-A双公头数据线 | 电脑连接车机 | [京东链接1](https://item.jd.com/100002277407.html) / [京东链接2](https://item.jd.com/100000896450.html) |
 | OTG数据线 | 手机连接车机 | [京东链接1](https://item.jd.com/100095234799.html) / [京东链接2](https://item.jd.com/100022896053.html) |
-| 套装(USB-A+OTG) | 电脑/手机连接车机 | [抖音商城](https://v.douyin.com/anSoVoCdLfU/) |
+| 套装(USB-A+OTG) | 电脑/手机连接车机 | [抖音商城](https://v.douyin.com/IsmYFCGid8g/) |
 | 应用管家 | 底层管理工具 | [下载链接](https://file.vju.cc/%E5%BA%94%E7%94%A8%E7%AE%A1%E5%AE%B6/%E5%BA%94%E7%94%A8%E7%AE%A1%E5%AE%B61.8.0%E5%85%AC%E7%AD%BE%E7%89%88.apk) |
 | WebADB | 浏览器安装工具 | [安装工具](https://app.webadb.com/install) |
 
