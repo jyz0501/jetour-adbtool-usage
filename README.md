@@ -102,20 +102,24 @@
    pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
    ```
 
-#### 4.1.2 Windows电脑ADB安装步骤
+#### 4.1.2 Windows电脑安装步骤
 1. **准备工作**
-   - 下载并安装ADB工具包
-   - 解压到电脑任意目录
-   - 下载需要安装的第三方软件APK文件
-
-2. **连接车机**
+   - 电脑下载需要安装的第三方软件APK文件
+   - 电脑打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
    - 使用USB-A双公头数据线连接电脑和车机
 
-3. **执行安装命令**
-   - 打开命令提示符
-   - 进入ADB工具目录
-   - 输入命令：`adb devices` 确认设备连接
-   - 输入命令：`adb install 软件路径.apk` 进行安装
+2. **在线连接**
+   - 在网站点击「开始使用」按钮
+   - 按照网站提示完成连接
+
+3. **上传安装包**
+   - 在网站界面上传APK文件到车机 `/storage/emulated/0/temp/` 目录
+
+4. **执行安装命令**
+   - 在网站终端执行以下命令安装软件：
+   ```
+   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
+   ```
 
 #### 4.1.3 苹果电脑安装步骤
 1. **准备工作**
