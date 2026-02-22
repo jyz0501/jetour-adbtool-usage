@@ -37,6 +37,9 @@
 - **车机系统**：参见 适用车型
 - **数据线**：OTG功能线、手机/电脑数据线
 - **第三方软件APK文件**：《必备软件》文件夹内所用软件请提前下载到设备上
+- **浏览器**：电脑/手机需要安装 EDGE 或 Chrome 浏览器
+  - EDGE 浏览器：[下载链接](https://www.microsoft.com/zh-cn/microsoft-edge/download)
+  - Chrome 浏览器：[下载链接](https://www.google.com/chrome)
 
 
 ### 3.2 推荐工具及购买链接
@@ -78,7 +81,7 @@
 #### 4.1.1 安卓手机安装步骤
 1. **准备工作**
    - 手机下载需要安装的第三方软件APK文件
-   - 手机打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
+   - 手机打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev) 网站
    - 使用OTG数据线连接手机和车机
    ![android1](img/android1.jpg)
 
@@ -105,7 +108,7 @@
 #### 4.1.2 Windows电脑安装步骤
 1. **准备工作**
    - 电脑下载需要安装的第三方软件APK文件
-   - 电脑打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
+   - 电脑打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev) 网站
    - 使用USB-A双公头数据线连接电脑和车机
 
 2. **在线连接**
@@ -124,7 +127,7 @@
 #### 4.1.3 苹果电脑安装步骤
 1. **准备工作**
    - Mac下载需要安装的第三方软件APK文件
-   - Mac打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
+   - Mac打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev) 网站
    - 使用USB-A双公头数据线连接Mac和车机
    ![tango1](img/tango1.png)
 
