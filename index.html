@@ -16,19 +16,26 @@
         }
         .container {
             display: flex;
-            max-width: 800px;
+            max-width: 1080px;
             margin: 0 auto;
+            width: 100%;
         }
         .sidebar {
-            width: 260px;
+            width: 15%;
             background: #2c3e50;
             color: #fff;
             padding: 20px;
-            position: fixed;
+            position: sticky;
             height: 100vh;
             overflow-y: auto;
-            left: 0;
             top: 0;
+            flex-shrink: 0;
+        }
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            padding-bottom: 100px;
+            width: 85%;
         }
         .sidebar h2 {
             font-size: 18px;
@@ -54,12 +61,6 @@
         .toc a:hover, .toc a.active {
             background: #34495e;
             color: #fff;
-        }
-        .main-content {
-            flex: 1;
-            margin-left: 260px;
-            padding: 40px;
-            padding-bottom: 100px;
         }
         .section {
             background: #fff;
