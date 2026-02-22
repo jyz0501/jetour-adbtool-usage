@@ -98,9 +98,11 @@
 
 4. **执行安装命令**
    - 在网站终端执行以下命令安装软件：
-   ```
-   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
-   ```
+
+<div style="position:relative;background:#2c3e50;color:#ecf0f1;padding:15px;padding-right:70px;border-radius:5px;margin:15px 0;white-space:pre-wrap;word-wrap:break-word;word-break:break-all;max-width:800px;">
+pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
+<button onclick="navigator.clipboard.writeText(this.parentElement.textContent.trim());this.textContent='已复制';setTimeout(()=>this.textContent='复制',2000)" style="position:absolute;top:8px;right:8px;background:#3498db;color:#fff;border:none;padding:6px 12px;border-radius:4px;cursor:pointer;font-size:12px;">复制</button>
+</div>
 
 #### 4.1.2 Windows电脑ADB安装步骤
 1. **准备工作**
@@ -147,9 +149,11 @@
 
 4. **执行安装命令**
    - 在复制粘贴以下命令回车执行：
-   ```
-   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
-   ```
+
+<div style="position:relative;background:#2c3e50;color:#ecf0f1;padding:15px;padding-right:70px;border-radius:5px;margin:15px 0;white-space:pre-wrap;word-wrap:break-word;word-break:break-all;max-width:800px;">
+pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
+<button onclick="navigator.clipboard.writeText(this.parentElement.textContent.trim());this.textContent='已复制';setTimeout(()=>this.textContent='复制',2000)" style="position:absolute;top:8px;right:8px;background:#3498db;color:#fff;border:none;padding:6px 12px;border-radius:4px;cursor:pointer;font-size:12px;">复制</button>
+</div>
    ![tango9-1](img/tango9-1.png)
    ![tang9-2](img/tang9-2.png)
 
