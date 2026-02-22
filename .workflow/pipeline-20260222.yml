@@ -1,0 +1,29 @@
+version: '1.0'
+name: pipeline-20260222
+displayName: pipeline-20260222
+triggers:
+  trigger: auto
+  push:
+    branches:
+      prefix:
+        - ''
+stages:
+  - name: start
+    displayName: 开始
+    strategy: naturally
+    trigger: auto
+    executor: []
+    steps:
+      - step: release@gitee
+        name: release_gitee
+        displayName: Gitee Release
+        releaseName: null
+        description: ./
+        tagName: frist
+        upstreamArtifact: []
+        assertFiles: null
+        prerelease: false
+        allowUpdate: true
+        notify: []
+        strategy:
+          retry: '0'
