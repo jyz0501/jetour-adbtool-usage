@@ -80,21 +80,21 @@
    - 手机下载需要安装的第三方软件APK文件
    - 手机打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev/connect/usb) 网站
    - 使用OTG数据线连接手机和车机
-   ![android1](img/androidandroid1.png.jpg)
+   ![android1](img/android1.jpg)
 
 2. **在线连接**
    - 在网站点击「开始使用」按钮
    - 按照网站提示完成连接
-   ![android2](img/androidandroid2.png.jpg)
-   ![android3](img/androidandroid3.png.jpg)
-   ![android4](img/androidandroid4.png.jpg)
-   ![android5](img/androidandroid5.png.jpg)
-   ![android6](img/androidandroid6.png.jpg)
+   ![android2](img/android2.jpg)
+   ![android3](img/android3.jpg)
+   ![android4](img/android4.jpg)
+   ![android5](img/android5.jpg)
+   ![android6](img/android6.jpg)
 
 3. **上传安装包**
    - 在网站界面上传APK文件到车机 `/storage/emulated/0/temp/` 目录
-   ![android7](img/androidandroid7.png.jpg)
-   ![android8](img/androidandroid8.png.jpg)
+   ![android7](img/android7.jpg)
+   ![android8](img/android8.jpg)
 
 4. **执行安装命令**
    - 在网站终端执行以下命令安装软件：
