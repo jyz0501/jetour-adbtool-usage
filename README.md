@@ -1,5 +1,7 @@
 # 捷途旅行者车机安装第三方软件教程
 
+**在线访问**: https://jyz0501.github.io/jetour-adbtool-usage/
+
 ## 1. 教程前言
 
 ### 安装风险
