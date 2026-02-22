@@ -59,11 +59,15 @@
 2. **打开车机工程模式**
    - 在车机应用中心打开「无人机APP」或「旅行精灵APP」
    - 再次打开应用中心的「蓝牙电话」
+   ![adb1](img/adb1.png)
    - 输入密码，进入车机工程模式
+   ![adb2](img/adb2.png)
 
 3. **开启ADB权限**
    - 在工程模式下滑找到「加密设置」或「加密项」
+   ![adb3](img/adb3.png)
    - 进入加密设置，输入ADB权限密码
+   ![adb4](img/adb4.png)
    - 确认ADB权限为开启状态
 
 4. **重启车机**
@@ -97,29 +101,10 @@
 4. **执行安装命令**
    - 在网站终端执行以下命令安装软件：
    ```
-   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
+   pm install -r /storage/emulated/0/temp/侧边栏_1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面1.2.0.3.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
    ```
 
-#### 4.1.2 Windows电脑安装步骤
-1. **准备工作**
-   - 电脑下载需要安装的第三方软件APK文件
-   - 电脑打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev) 网站
-   - 使用USB-A双公头数据线连接电脑和车机
-
-2. **在线连接**
-   - 在网站点击「开始使用」按钮
-   - 按照网站提示完成连接
-
-3. **上传安装包**
-   - 在网站界面上传APK文件到车机 `/storage/emulated/0/temp/` 目录
-
-4. **执行安装命令**
-   - 在网站终端执行以下命令安装软件：
-   ```
-   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
-   ```
-
-#### 4.1.3 苹果电脑安装步骤
+#### 4.1.2 苹果电脑安装步骤
 1. **准备工作**
    - Mac下载需要安装的第三方软件APK文件
    - Mac打开 EDGE 或 Chrome 浏览器，打开 [Tango USB Connect](https://app.tangoapp.dev) 网站
@@ -150,89 +135,51 @@
 4. **执行安装命令**
    - 在复制粘贴以下命令回车执行：
    ```
-   pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
+   pm install -r /storage/emulated/0/temp/侧边栏_1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面1.2.0.3.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
    ```
    ![tango9-1](img/tango9-1.png)
    ![tang9-2](img/tang9-2.png)
 
-### 4.2 其他安装方式
+#### 4.1.3 Windows电脑安装步骤
 
-#### 4.2.1 U盘安装方式
-1. **准备工作**
-   - 将需要安装的APK文件复制到U盘中
+安装步骤同苹果电脑一致，在首次用浏览器打开 Tango 网站时，需要允许网站读取本机设备（在浏览器弹窗时选择允许）。
+![Win1](img/Win1.jpg)
 
-2. **连接车机**
-   - 将U盘通过OTG线连接到车机
-
-3. **安装软件**
-   - 车机端打开文件管理器
-   - 找到U盘中的APK文件并点击安装
-   - 按照提示完成安装
-
-#### 4.2.2 WiFi传输安装方式
-1. **准备工作**
-   - 安卓手机下载需要安装的APK文件
-
-2. **连接车机**
-   - 打开车机WiFi热点
-   - 手机连接车机WiFi
-
-3. **传输文件**
-   - 使用手机文件管理器找到下载的APK文件
-   - 通过WiFi传输功能将APK文件发送到车机
-
-4. **安装软件**
-   - 车机端打开文件管理器
-   - 找到传输的APK文件并点击安装
-   - 按照提示完成安装
+执行安装命令：
+```
+pm install -r /storage/emulated/0/temp/侧边栏_1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面1.2.0.3.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
+```
 
 ## 5. 问题解答
 
 ### 5.1 常见问题
 
-**Q1: 车机无法安装第三方软件怎么办？**
-A: 检查车机是否开启了「未知来源应用安装」权限，路径：设置 → 安全与隐私 → 未知来源应用安装
+**Q1: 手机连接不上车机是什么情况？**
+A: 检查车机是否开启了「ADB」权限；必须使用 EDGE 、Chrome 浏览器或者车机助手APP连接
 
 **Q2: ADB连接车机失败怎么办？**
-A: 检查USB数据线是否正常；重启车机和电脑后重新连接
+A: 检查OTG线是否正常；强制重启车机后重新连接
 
 **Q3: 执行ADB命令时出现错误怎么办？**
-A: 检查ADB工具是否正确安装；确认设备已正确连接（`adb devices`命令应显示设备）；尝试使用管理员权限运行命令提示符/终端
-
-**Q4: 安装过程中出现错误提示怎么办？**
 A: 检查APK文件是否完整，尝试重新下载；检查车机存储空间是否充足
 
-**Q5: 安装后软件无法运行怎么办？**
+**Q4: 安装的软件无法打开怎么办？**
 A: 可能是软件与车机系统不兼容，建议尝试其他版本或类似功能的软件
 
-**Q6: 安装后车机变得卡顿怎么办？**
-A: 卸载不必要的第三方软件，清理车机缓存；恢复出厂设置（谨慎操作）
+**Q5: 安装后车机变得卡顿怎么办？**
+A: 卸载不必要的第三方软件，清理车机缓存；实在无法解决，恢复出厂设置（谨慎操作）
 
-**Q7: 如何卸载已安装的第三方软件？**
-A: 车机端打开「设置」→「应用管理」→ 选择需要卸载的软件 → 点击「卸载」
+**Q6: 如何卸载已安装的软件？**
+A: 车机端打开「应用管家」→ 选择需要卸载的软件 → 点击「卸载」
 
-### 5.2 高级问题
+### 5.2 进阶问题
 
-**Q1: 如何获取车机Root权限？**
-A: 不建议获取Root权限，可能导致系统崩溃，影响车辆正常功能
+**Q1: 是否会影响车机系统正常运行？是否影响保修？**
+A: 不会，需要时可恢复出厂设置，一切重回原点。
 
-**Q2: 如何备份车机系统？**
-A: 可以使用ADB命令进行备份，具体命令：`adb backup -all -f backup.ab`
+### 免责声明
 
-**Q3: 车机系统更新后无法安装第三方软件怎么办？**
-A: 等待民间破解方法，或尝试降级系统（风险较高）
-
-**Q4: 安装第三方软件会影响车辆保修吗？**
-A: 本教程是在不破坏、不修改官方车机系统固件的基础上进行的操作，不影响车辆质保。但如果因自行修改车机系统导致的问题，可能会影响保修
-
-**Q5: 如何解决软件分辨率不匹配的问题？**
-A: 下载适配车机屏幕分辨率的软件版本，或使用屏幕适配工具
-
-## 免责声明
-
-本教程是在不破坏、不修改官方车机系统固件的基础上进行的操作，不影响车辆质保。请全程按照教程所示步骤操作，禁止修改车机其他内容。因自行操作而导致的车辆故障，所有后果自行负责。
-
-本教程仅供参考，安装第三方软件存在一定风险。操作过程中如出现任何问题，与本教程作者无关。请谨慎操作，风险自担。
+本教程是在不破坏、不修改官方车机系统固件的基础上进行的操作，不影响车辆质保。但如果因自行修改车机系统导致的问题，可能会影响保修
 
 ---
 

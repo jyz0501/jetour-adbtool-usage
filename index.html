@@ -310,7 +310,7 @@
                 content: `
                     <h2>4. 安装步骤</h2>
                     
-                    <h3>4.0 开启车机ADB权限（必须步骤）</h3>
+                    <h3>4.0 开启车机ADB权限（必须步骤）</h3> 
                     <div class="warning">
                         <p><strong>在开始安装第三方软件之前，必须先开启车机的ADB权限，否则无法通过ADB安装软件。</strong></p>
                     </div>
@@ -324,13 +324,17 @@
                             <ul>
                                 <li>在车机应用中心打开「无人机APP」或「旅行精灵APP」</li>
                                 <li>再次打开应用中心的「蓝牙电话」</li>
+                                <img src="img/adb1.png" alt="adb1">
                                 <li>输入密码，进入车机工程模式</li>
+                                <img src="img/adb2.png" alt="adb2">
                             </ul>
                         </li>
                         <li><strong>开启ADB权限</strong>
                             <ul>
                                 <li>在工程模式下滑找到「加密设置」或「加密项」</li>
+                                <img src="img/adb3.png" alt="adb3">
                                 <li>进入加密设置，输入ADB权限密码</li>
+                                <img src="img/adb4.png" alt="adb4">
                                 <li>确认ADB权限为开启状态</li>
                             </ul>
                         </li>
@@ -383,51 +387,16 @@
                             <ul>
                                 <li>在网站终端执行以下命令安装软件：</li>
                             </ul>
-                            <pre>pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome</pre>
-                        </li>
-                    </ol>
-                `
-            },
-            {
-                id: "Windows安装",
-                title: "6. Windows电脑安装",
-                content: `
-                    <h3>4.1.2 Windows电脑安装步骤</h3>
-                    
-                    <ol>
-                        <li><strong>准备工作</strong>
-                            <ul>
-                                <li>电脑下载需要安装的第三方软件APK文件</li>
-                                <li>电脑打开 EDGE 或 Chrome 浏览器，打开 <a href="https://app.tangoapp.dev" target="_blank">Tango USB Connect</a> 网站</li>
-                                <li>使用USB-A双公头数据线连接电脑和车机</li>
-                            </ul>
-                            <img src="img/Win1.jpg" alt="Win1">
-                        </li>
-                        <li><strong>在线连接</strong>
-                            <ul>
-                                <li>在网站点击「开始使用」按钮</li>
-                                <li>按照网站提示完成连接</li>
-                            </ul>
-                        </li>
-                        <li><strong>上传安装包</strong>
-                            <ul>
-                                <li>在网站界面上传APK文件到车机 <code>/storage/emulated/0/temp/</code> 目录</li>
-                            </ul>
-                        </li>
-                        <li><strong>执行安装命令</strong>
-                            <ul>
-                                <li>在网站终端执行以下命令安装软件：</li>
-                            </ul>
-                            <pre>pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome</pre>
+                            <pre>pm install -r /storage/emulated/0/temp/侧边栏_1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面1.2.0.3.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome</pre>
                         </li>
                     </ol>
                 `
             },
             {
                 id: "苹果安装",
-                title: "7. 苹果电脑安装",
+                title: "6. 苹果电脑安装",
                 content: `
-                    <h3>4.1.3 苹果电脑安装步骤</h3>
+                    <h3>4.1.2 苹果电脑安装步骤</h3>
                     
                     <ol>
                         <li><strong>准备工作</strong>
@@ -461,7 +430,7 @@
                             <ul>
                                 <li>在网站终端执行以下命令安装软件：</li>
                             </ul>
-                            <pre>pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome</pre>
+                            <pre>pm install -r /storage/emulated/0/temp/侧边栏_1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面1.2.0.3.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome</pre>
                             <img src="img/tango9-1.png" alt="tango9-1">
                             <img src="img/tang9-2.png" alt="tang9-2">
                         </li>
@@ -469,64 +438,21 @@
                 `
             },
             {
-                id: "其他安装",
-                title: "8. 其他安装方式",
+                id: "Windows安装",
+                title: "7. Windows电脑安装",
                 content: `
-                    <h3>4.2 其他安装方式</h3>
+                    <h3>7.1.3 Windows电脑安装步骤</h3>
                     
-                    <h4>4.2.1 U盘安装方式</h4>
-                    <ol>
-                        <li><strong>准备工作</strong>
-                            <ul>
-                                <li>将需要安装的APK文件复制到U盘中</li>
-                            </ul>
-                        </li>
-                        <li><strong>连接车机</strong>
-                            <ul>
-                                <li>将U盘通过OTG线连接到车机</li>
-                            </ul>
-                        </li>
-                        <li><strong>安装软件</strong>
-                            <ul>
-                                <li>车机端打开文件管理器</li>
-                                <li>找到U盘中的APK文件并点击安装</li>
-                                <li>按照提示完成安装</li>
-                            </ul>
-                        </li>
-                    </ol>
-
-                    <h4>4.2.2 WiFi传输安装方式</h4>
-                    <ol>
-                        <li><strong>准备工作</strong>
-                            <ul>
-                                <li>安卓手机下载需要安装的APK文件</li>
-                            </ul>
-                        </li>
-                        <li><strong>连接车机</strong>
-                            <ul>
-                                <li>打开车机WiFi热点</li>
-                                <li>手机连接车机WiFi</li>
-                            </ul>
-                        </li>
-                        <li><strong>传输文件</strong>
-                            <ul>
-                                <li>使用手机文件管理器找到下载的APK文件</li>
-                                <li>通过WiFi传输功能将APK文件发送到车机</li>
-                            </ul>
-                        </li>
-                        <li><strong>安装软件</strong>
-                            <ul>
-                                <li>车机端打开文件管理器</li>
-                                <li>找到传输的APK文件并点击安装</li>
-                                <li>按照提示完成安装</li>
-                            </ul>
-                        </li>
-                    </ol>
+                    <p>安装步骤同苹果电脑一致，在首次用浏览器打开 Tango 网站时，需要允许网站读取本机设备（在浏览器弹窗时选择允许）。</p>
+                    <img src="img/Win1.jpg" alt="Win1">
+                    
+                    <p>执行安装命令：</p>
+                    <pre>pm install -r /storage/emulated/0/temp/侧边栏_1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面1.2.0.3.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome</pre>
                 `
             },
             {
                 id: "问题解答",
-                title: "9. 问题解答",
+                title: "8. 问题解答",
                 content: `
                     <h2>5. 问题解答</h2>
                     
