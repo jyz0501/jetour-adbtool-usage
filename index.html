@@ -146,6 +146,7 @@
             background: #2c3e50;
             color: #ecf0f1;
             padding: 15px;
+            padding-right: 60px;
             border-radius: 5px;
             overflow-x: auto;
             margin: 15px 0;
@@ -155,6 +156,28 @@
             white-space: pre-wrap;
             word-wrap: break-word;
             word-break: break-all;
+            position: relative;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+        .copy-btn:hover {
+            background: #2980b9;
+        }
+        .copy-btn.copied {
+            background: #27ae60;
         }
         .page code {
             background: #f5f5f5;
@@ -471,7 +494,7 @@
                         </li>
                         <li><strong>执行安装命令</strong>
                             <ul>
-                                <li>在复制粘贴以下命令回车执行：</li>
+                                <li>复制粘贴以下命令，回车执行：</li>
                             </ul>
                             <pre>pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome</pre>
                             <img src="img/tango9-1.png" alt="tango9-1">
@@ -600,16 +623,52 @@
         function renderPage(index) {
             const mainContent = document.getElementById('main-content');
             mainContent.innerHTML = `<div class="page">${content[index].content}</div>`;
-            
+
+            // 为所有pre标签添加复制按钮
+            const preElements = mainContent.querySelectorAll('pre');
+            preElements.forEach((pre) => {
+                const copyBtn = document.createElement('button');
+                copyBtn.className = 'copy-btn';
+                copyBtn.textContent = '复制';
+                copyBtn.onclick = () => {
+                    const text = pre.textContent.trim();
+                    navigator.clipboard.writeText(text).then(() => {
+                        copyBtn.textContent = '已复制';
+                        copyBtn.classList.add('copied');
+                        setTimeout(() => {
+                            copyBtn.textContent = '复制';
+                            copyBtn.classList.remove('copied');
+                        }, 2000);
+                    }).catch(() => {
+                        // 降级方案：使用textarea复制
+                        const textarea = document.createElement('textarea');
+                        textarea.value = text;
+                        textarea.style.position = 'fixed';
+                        textarea.style.opacity = '0';
+                        document.body.appendChild(textarea);
+                        textarea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textarea);
+                        copyBtn.textContent = '已复制';
+                        copyBtn.classList.add('copied');
+                        setTimeout(() => {
+                            copyBtn.textContent = '复制';
+                            copyBtn.classList.remove('copied');
+                        }, 2000);
+                    });
+                };
+                pre.appendChild(copyBtn);
+            });
+
             document.getElementById('pageNumber').textContent = `${index + 1} / ${content.length}`;
             document.getElementById('prevBtn').disabled = index === 0;
             document.getElementById('nextBtn').disabled = index === content.length - 1;
-            
+
             const tocLinks = document.querySelectorAll('.toc a');
             tocLinks.forEach((link, i) => {
                 link.classList.toggle('active', i === index);
             });
-            
+
             window.scrollTo(0, 0);
         }
 
