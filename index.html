@@ -14,49 +14,42 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
             background: #f5f5f5;
         }
-        .container {
-            display: flex;
-            max-width: 1080px;
-            margin: 0 auto;
-            width: 100%;
-        }
         .sidebar {
-            width: 15%;
+            width: 100%;
             background: #2c3e50;
             color: #fff;
-            padding: 20px;
-            position: sticky;
-            height: 100vh;
-            overflow-y: auto;
+            padding: 10px 20px;
+            position: fixed;
             top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
             flex-shrink: 0;
         }
-        .main-content {
-            flex: 1;
-            padding: 40px;
-            padding-bottom: 100px;
-            width: 85%;
-        }
         .sidebar h2 {
-            font-size: 18px;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #34495e;
+            display: none;
         }
         .toc {
             list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
         }
         .toc li {
-            margin: 8px 0;
+            margin: 0;
         }
         .toc a {
             color: #bdc3c7;
             text-decoration: none;
-            font-size: 14px;
-            display: block;
-            padding: 8px 10px;
+            font-size: 12px;
+            display: inline-block;
+            padding: 5px 10px;
             border-radius: 4px;
             transition: all 0.3s;
+            white-space: nowrap;
         }
         .toc a:hover, .toc a.active {
             background: #34495e;
@@ -122,18 +115,23 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            clear: both;
         }
         .section table {
-            width: 800px;
+            max-width: 800px;
+            width: 100%;
             border-collapse: collapse;
             margin: 15px 0;
             margin-left: auto;
             margin-right: auto;
+            table-layout: fixed;
+            word-wrap: break-word;
         }
         .section th, .section td {
             border: 1px solid #ddd;
             padding: 10px;
             text-align: left;
+            word-wrap: break-word;
         }
         .section th {
             background: #3498db;
@@ -149,6 +147,28 @@
             border-radius: 5px;
             overflow-x: auto;
             margin: 15px 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            position: relative;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.3s;
+        }
+        .copy-btn:hover {
+            background: #2980b9;
+        }
+        .copy-btn.copied {
+            background: #27ae60;
         }
         .section code {
             background: #f5f5f5;
@@ -176,15 +196,23 @@
         }
         .watermark {
             position: fixed;
-            top: 20px;
+            top: 400px;
             left: 50%;
             transform: translateX(-50%);
             color: #ff6600;
             font-size: 24px;
             font-weight: bold;
-            z-index: 1000;
+            z-index: 999;
             pointer-events: none;
         }
+        .main-content {
+            padding: 80px 40px 100px 40px;
+            padding-bottom: 100px;
+            width: 100%;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
         @media (max-width: 768px) {
             .sidebar {
                 display: none;
@@ -197,13 +225,10 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <h2>📑 目录</h2>
-            <ul class="toc" id="toc"></ul>
-        </div>
-        <div class="main-content" id="main-content"></div>
+    <div class="sidebar">
+        <ul class="toc" id="toc"></ul>
     </div>
+    <div class="main-content" id="main-content"></div>
     <div class="watermark">抖音 @大伦哥的CDM</div>
 
     <script>
@@ -328,7 +353,7 @@
                     </ol>
 
                     <h3>4.1 ADB 安装方式（推荐）</h3>
-                    <img src="./使用建议图:%20可视化安装说明.jpg" alt="使用建议图">
+                    <img src="./img/p2.jpg" alt="使用建议图">
                 `
             },
             {
@@ -341,7 +366,7 @@
                         <li><strong>准备工作</strong>
                             <ul>
                                 <li>手机下载需要安装的第三方软件APK文件</li>
-                                <li>手机打开 EDGE 或 Chrome 浏览器，打开 <a href="https://app.tangoapp.dev/connect/usb" target="_blank">Tango USB Connect</a> 网站</li>
+                                <li>手机打开 EDGE 或 Chrome 浏览器，打开 <a href="https://app.tangoapp.dev" target="_blank">Tango USB Connect</a> 网站</li>
                                 <li>使用OTG数据线连接手机和车机</li>
                             </ul>
                             <img src="img/android1.jpg" alt="android1">
@@ -383,7 +408,7 @@
                         <li><strong>准备工作</strong>
                             <ul>
                                 <li>电脑下载需要安装的第三方软件APK文件</li>
-                                <li>电脑打开 EDGE 或 Chrome 浏览器，打开 <a href="https://app.tangoapp.dev/connect/usb" target="_blank">Tango USB Connect</a> 网站</li>
+                                <li>电脑打开 EDGE 或 Chrome 浏览器，打开 <a href="https://app.tangoapp.dev" target="_blank">Tango USB Connect</a> 网站</li>
                                 <li>使用USB-A双公头数据线连接电脑和车机</li>
                             </ul>
                             <img src="img/Win1.jpg" alt="Win1">
@@ -418,7 +443,7 @@
                         <li><strong>准备工作</strong>
                             <ul>
                                 <li>Mac下载需要安装的第三方软件APK文件</li>
-                                <li>Mac打开 EDGE 或 Chrome 浏览器，打开 <a href="https://app.tangoapp.dev/connect/usb" target="_blank">Tango USB Connect</a> 网站</li>
+                                <li>Mac打开 EDGE 或 Chrome 浏览器，打开 <a href="https://app.tangoapp.dev" target="_blank">Tango USB Connect</a> 网站</li>
                                 <li>使用USB-A双公头数据线连接Mac和车机</li>
                             </ul>
                             <img src="img/tango1.png" alt="tango1">
@@ -441,14 +466,14 @@
                             </ul>
                             <img src="img/tango8.png" alt="tango8">
                             <img src="img/tango9.png" alt="tango9">
-                            <img src="img/tango9-1.png" alt="tango9-1">
-                            <img src="img/tang9-2.png" alt="tang9-2">
                         </li>
                         <li><strong>执行安装命令</strong>
                             <ul>
                                 <li>在网站终端执行以下命令安装软件：</li>
                             </ul>
                             <pre>pm install -r /storage/emulated/0/temp/侧边栏1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome</pre>
+                            <img src="img/tango9-1.png" alt="tango9-1">
+                            <img src="img/tang9-2.png" alt="tang9-2">
                         </li>
                     </ol>
                 `
@@ -594,10 +619,36 @@
             });
         }
 
+        function addCopyButtons() {
+            const preElements = document.querySelectorAll('.section pre');
+            preElements.forEach(pre => {
+                if (pre.querySelector('.copy-btn')) return;
+                
+                const copyBtn = document.createElement('button');
+                copyBtn.className = 'copy-btn';
+                copyBtn.textContent = '复制';
+                copyBtn.onclick = function() {
+                    const clone = pre.cloneNode(true);
+                    clone.querySelector('.copy-btn').remove();
+                    const text = clone.textContent;
+                    navigator.clipboard.writeText(text).then(() => {
+                        copyBtn.textContent = '已复制';
+                        copyBtn.classList.add('copied');
+                        setTimeout(() => {
+                            copyBtn.textContent = '复制';
+                            copyBtn.classList.remove('copied');
+                        }, 2000);
+                    });
+                };
+                pre.appendChild(copyBtn);
+            });
+        }
+
         window.addEventListener('scroll', updateActiveMenu);
 
         renderTOC();
         renderContent();
+        addCopyButtons();
     </script>
 </body>
 </html>
