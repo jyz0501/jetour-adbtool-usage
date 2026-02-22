@@ -110,14 +110,20 @@
             text-decoration: underline;
         }
         .section img {
-            max-width: 100%;
+            width: 800px;
+            height: auto;
             border-radius: 8px;
             margin: 15px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         .section table {
-            width: 100%;
+            width: 800px;
             border-collapse: collapse;
             margin: 15px 0;
+            margin-left: auto;
+            margin-right: auto;
         }
         .section th, .section td {
             border: 1px solid #ddd;
@@ -166,9 +172,10 @@
         .watermark {
             position: fixed;
             top: 20px;
-            right: 20px;
-            color: rgba(0, 0, 0, 0.3);
-            font-size: 14px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ff6600;
+            font-size: 24px;
             font-weight: bold;
             z-index: 1000;
             pointer-events: none;
