@@ -27,7 +27,7 @@
 ### 方式一：大伦哥车机助手（推荐）
 使用大伦哥开发的车机助手工具，界面友好，操作简单，推荐使用。
 
-[大伦哥车机助手](https://jyz0501.github.io/jetour_adb_tool/)
+[大伦哥车机助手](https://tool.qianxian.tech)
 
 - 支持安卓手机连接
 - 支持 Windows 电脑连接
