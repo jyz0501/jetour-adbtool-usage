@@ -60,13 +60,15 @@
 | OTG数据线 | 手机连接车机 | [京东链接1](https://item.jd.com/100095234799.html) / [京东链接2](https://item.jd.com/100022896053.html) |
 | 套装(USB-A+OTG) | 电脑/手机连接车机 | [抖音商城](https://v.douyin.com/IsmYFCGid8g/) |
 | 应用管家 | 底层管理工具 | [下载链接](https://wcnlnks8zauh.feishu.cn/file/DM3ebTxeGojMZmx1YumcP7konWh) |
+| 大伦哥车机助手 | 安装工具 | [安装工具](https://tool.qianxian.tech) |
+| 车机密码查询 | 密码工具 | [密码工具](https://pw.qianxian.tech/) |
 
 ## 4. 开启车机ADB权限
 
 **在开始安装第三方软件之前，必须先开启车机的ADB权限，否则无法通过ADB安装软件。**
 
 1. **查看车机密码**
-   - 打开 [捷途旅行者车机密码查询网站](https://jyz0501.github.io/jetour_vehicle_password/) 查看当前密码
+   - 打开 [捷途旅行者车机密码查询网站](https://pw.qianxian.tech/) 查看当前密码
 
 2. **打开车机工程模式**
    - 在车机应用中心打开「无人机APP」或「旅行精灵APP」
