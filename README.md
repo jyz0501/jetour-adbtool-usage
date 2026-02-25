@@ -47,8 +47,8 @@
 - **数据线**：OTG功能线、手机/电脑数据线
 - **第三方软件APK文件**：tools 文件夹内所用软件请提前下载到设备上
 - **浏览器**：电脑/手机需要安装 EDGE 或 Chrome 浏览器
-  - EDGE 浏览器：[下载链接](https://www.microsoft.com/zh-cn/microsoft-edge/download)
-  - Chrome 浏览器：[下载链接](https://www.google.com/chrome)
+  - EDGE 浏览器：[下载链接](https://101.42.10.175:35070/down/dH4r7RBRe8b7.apk)
+  - Chrome 浏览器：[下载链接](https://101.42.10.175:35070/down/BOrMbeOyDAba.apk)
 
 
 ### 3.2 推荐工具及购买链接
@@ -65,6 +65,10 @@
 | 氢桌面 | 车机桌面 | [下载链接](https://101.42.10.175:35070/down/x9g1UOPys0F2.apk) |
 | 沙发管家 | 应用市场 | [下载链接](https://101.42.10.175:35070/down/IvlRhguh57DO.apk) |
 | 侧边栏 | 快捷启动工具 | [下载链接](https://101.42.10.175:35070/down/P32XjDMnyz3M.apk) |
+| 小横条 | 底部导航栏增强 | [下载链接](https://101.42.10.175:35070/down/jkDh9pgcamip.apk) |
+| 哨兵监控 | 停车监控工具 | [下载链接](https://101.42.10.175:35070/down/tZyE46IwtbVf.apk) |
+| 易控车机版(PIP) | 车机控制(PIP模式) | [下载链接](https://101.42.10.175:35070/down/qdieD4GPTDev.apk) |
+| 蓝牙遥控 | 手机遥控车机 | [下载链接](https://101.42.10.175:35070/down/PwBUGMYZbzbj.apk) |
 
 ## 4. 开启车机ADB权限
 
