@@ -24,6 +24,9 @@ jobs:
         run: |
           mkdir -p deploy
           cp index.html deploy/
+          SHA_SHORT=$(echo "${{ github.sha }}" | cut -c1-7)
+          sed -i "s/VERSION_PLACEHOLDER/$SHA_SHORT/g" deploy/index.html
+          sed -i "s/VERSION_PLACEHOLDER/$SHA_SHORT/g" index.html
           cp icon.png deploy/
           cp -r img deploy/
           cp -r tools deploy/

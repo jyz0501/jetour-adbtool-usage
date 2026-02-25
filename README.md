@@ -59,9 +59,12 @@
 | USB-A双公头数据线 | 电脑连接车机 | [京东链接1](https://item.jd.com/100002277407.html) / [京东链接2](https://item.jd.com/100000896450.html) |
 | OTG数据线 | 手机连接车机 | [京东链接1](https://item.jd.com/100095234799.html) / [京东链接2](https://item.jd.com/100022896053.html) |
 | 套装(USB-A+OTG) | 电脑/手机连接车机 | [抖音商城](https://v.douyin.com/IsmYFCGid8g/) |
-| 应用管家 | 底层管理工具 | [下载链接](https://wcnlnks8zauh.feishu.cn/file/DM3ebTxeGojMZmx1YumcP7konWh) |
+| 应用管家 | 底层管理工具 | [下载链接](https://101.42.10.175:35070/down/mnfds48btpxq.apk) |
 | 大伦哥车机助手 | 安装工具 | [安装工具](https://tool.qianxian.tech) |
 | 车机密码查询 | 密码工具 | [密码工具](https://pw.qianxian.tech/) |
+| 氢桌面 | 车机桌面 | [下载链接](https://101.42.10.175:35070/down/x9g1UOPys0F2.apk) |
+| 沙发管家 | 应用市场 | [下载链接](https://101.42.10.175:35070/down/IvlRhguh57DO.apk) |
+| 侧边栏 | 快捷启动工具 | [下载链接](https://101.42.10.175:35070/down/P32XjDMnyz3M.apk) |
 
 ## 4. 开启车机ADB权限
 
@@ -114,7 +117,7 @@
 4. **执行安装命令**
    - 在网站终端执行以下命令安装软件：
    ```
-   pm install -r /storage/emulated/0/temp/侧边栏_1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面1.2.0.3.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
+   pm install -r /storage/emulated/0/temp/P32XjDMnyz3M.apk; pm install -r /storage/emulated/0/temp/x9g1UOPys0F2.apk; pm install -r /storage/emulated/0/temp/IvlRhguh57DO.apk; pm install -r /storage/emulated/0/temp/mnfds48btpxq.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
    ```
 
 ## 6. 苹果电脑安装
@@ -149,7 +152,7 @@
 4. **执行安装命令**
    - 在复制粘贴以下命令回车执行：
    ```
-   pm install -r /storage/emulated/0/temp/侧边栏_1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面1.2.0.3.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
+   pm install -r /storage/emulated/0/temp/P32XjDMnyz3M.apk; pm install -r /storage/emulated/0/temp/x9g1UOPys0F2.apk; pm install -r /storage/emulated/0/temp/IvlRhguh57DO.apk; pm install -r /storage/emulated/0/temp/mnfds48btpxq.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
    ```
    ![tango9-1](img/tango9-1.png)
    ![tang9-2](img/tang9-2.png)
@@ -161,7 +164,7 @@
 
 执行安装命令：
 ```
-pm install -r /storage/emulated/0/temp/侧边栏_1.0.apk; pm install -r /storage/emulated/0/temp/氢桌面1.2.0.3.apk; pm install -r /storage/emulated/0/temp/沙发管家4.9.54.apk; pm install -r /storage/emulated/0/temp/应用管家1.8.3.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
+pm install -r /storage/emulated/0/temp/P32XjDMnyz3M.apk; pm install -r /storage/emulated/0/temp/x9g1UOPys0F2.apk; pm install -r /storage/emulated/0/temp/IvlRhguh57DO.apk; pm install -r /storage/emulated/0/temp/mnfds48btpxq.apk; am start -n com.mcar.auto.uid/com.mcar.auto.activity.IndexActivity; am start -n com.yunpan.appmanage/.ui.ActivityHome
 ```
 
 ## 8. 共同设置
