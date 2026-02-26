@@ -24,9 +24,13 @@ jobs:
         run: |
           mkdir -p deploy
           cp index.html deploy/
-          SHA_SHORT=$(echo "${{ github.sha }}" | cut -c1-7)
-          sed -i "s/VERSION_PLACEHOLDER/$SHA_SHORT/g" deploy/index.html
-          sed -i "s/VERSION_PLACEHOLDER/$SHA_SHORT/g" index.html
+          # 生成版本号（基于提交次数）
+          COMMIT_COUNT=$(git rev-list --count HEAD)
+          VERSION="v1.$COMMIT_COUNT.0"
+          # 更新版本号
+          sed -i "s/VERSION_PLACEHOLDER/$VERSION/g" deploy/index.html
+          sed -i "s/VERSION_PLACEHOLDER/$VERSION/g" index.html
+          echo "版本号已更新为: $VERSION"
           cp icon.png deploy/
           cp -r img deploy/
           cp -r tools deploy/
