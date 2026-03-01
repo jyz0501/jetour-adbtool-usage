@@ -209,11 +209,12 @@
             opacity: 0.6;
         }
         .main-content {
-            padding: 80px 40px 100px 40px;
-            padding-bottom: 100px;
+            padding: 80px 40px 80px 40px;
+            padding-bottom: 80px;
             width: 100%;
             max-width: 1080px;
             margin: 0 auto;
+            margin-bottom: 60px;
         }
 
         @media (max-width: 768px) {
@@ -225,6 +226,68 @@
                 padding: 20px;
             }
         }
+
+        .floating-toolbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1001;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+        }
+        .floating-toolbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .floating-toolbar a.install-tool {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        }
+        .floating-toolbar a.install-tool:hover {
+            background: linear-gradient(135deg, #2980b9 0%, #1f6dad 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+        }
+        .floating-toolbar a.password-tool {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        }
+        .floating-toolbar a.password-tool:hover {
+            background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+        }
+        .floating-toolbar a svg {
+            width: 18px;
+            height: 18px;
+        }
+        @media (max-width: 768px) {
+            .floating-toolbar {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 15px;
+            }
+            .floating-toolbar a {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+            .main-content {
+                padding-bottom: 140px !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -233,6 +296,21 @@
     </div>
     <div class="main-content" id="main-content"></div>
     <div class="watermark">抖音 @大伦哥的CDM</div>
+
+    <div class="floating-toolbar">
+        <a href="https://tool.qianxian.tech/" target="_blank" class="install-tool">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+            </svg>
+            安装工具
+        </a>
+        <a href="https://pw.qianxian.tech/" target="_blank" class="password-tool">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+            </svg>
+            密码工具
+        </a>
+    </div>
 
     <script>
         const content = [
